@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  jenkins:
+    image: jenkins_test:0.1
+    ports:
+      - "5005:5000"
