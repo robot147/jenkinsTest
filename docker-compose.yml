@@ -3,5 +3,10 @@ version: '3.7'
 services:
   jenkins:
     image: jenkins_test:0.1
+    restart: unless-stopped
     ports:
       - "5005:5000"
+    volumes:
+      - jenkins_volume:/app
+volumes:
+  jenkins_volume:
